@@ -1,0 +1,29 @@
+
+   
+    <div class="wrapper">
+        <div class="logo">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOSzP3Xr_WjSeA5ruZ3gHTC677KeOE-OWrlw&usqp=CAU" class="logo" alt="">
+        </div>
+        <div class="text-center mt-4 name">
+            A-M-K
+        </div>
+        <form class="p-3 mt-3" action="/login" method="post">
+            <div class="form-field d-flex align-items-center">
+                <span class="far fa-user"></span>
+                <input type="text" name="username" id="userName" placeholder="Username">
+            </div>
+            <div class="form-field d-flex align-items-center">
+                <span class="fas fa-key"></span>
+                <input type="password" name="password" id="pwd" placeholder="Password">
+            </div>
+            <% if(locals.errorMessage){%>
+            <div><h6 class="text-danger"> <%= errorMessage %></h6></div>
+           <%} %>
+            <button type="submit" class="btn mt-3">Login</button>
+            
+        </form>
+        <div class="text-center fs-6">
+            &#169 Anurag MK 
+        </div>
+    </div>
+  
